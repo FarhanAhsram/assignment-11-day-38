@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export async function getStaticPaths() {
   const response = await fetch(`https://jsonplaceholder.typicode.com/photos`);
@@ -33,7 +32,7 @@ export default function albumDetailsPage({ albumDetails }) {
           {albumDetails.map((item) => (
             <div key={item.id} class="p-4 text-center">
               <a href={item.url}>
-                <img
+                <Image
                   src={item.thumbnailUrl}
                   width={150}
                   height={150}
