@@ -29,23 +29,23 @@ export default function albumDetailsPage({ albumDetails }) {
           List of Photos
         </h1>
 
-        <div className="flex flex-wrap justify-center items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mx-auto">
           {albumDetails.map((item) => (
-            <div key={item.id} className="w-1/4 p-4 text-center">
-              <Link href={item.url}>
-                <Image
+            <div key={item.id} class="p-4 text-center">
+              <a href={item.url}>
+                <img
                   src={item.thumbnailUrl}
                   width={150}
                   height={150}
-                  quality={100}
                   alt="Thumbnail Cover"
-                  className="rounded-lg mx-auto my-2"
+                  class="rounded-lg mx-auto my-2"
                 />
-              </Link>
-              <h1 className="text-2x1 font-bold">{item.title}</h1>
+                <h1 class="font-bold">{item.title}</h1>
+              </a>
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );
