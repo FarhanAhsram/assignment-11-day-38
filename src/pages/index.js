@@ -10,7 +10,7 @@ export default function HomePage({ data }) {
   return (
     <div className="bg-gray-200 dark:bg-gray-900">
       <div className="container mx-auto p-4">
-        <h1 className="text-center font-bold text-3xl mt-2 mb-10 text-blue-700 border-b-2 border-blue-700 pb-2">
+        <h1 className="text-center font-bold text-3xl mt-2 mb-8 text-blue-700 border-b-2 border-blue-700 pb-2">
           List of Albums
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
@@ -31,6 +31,7 @@ export default function HomePage({ data }) {
             </Link>
           ))}
         </div>
+        
       </div>
     </div>
   );
