@@ -19,13 +19,13 @@ export default function HomePage({ data }) {
               key={item.id}
               href={`${item.id}`}
               className={`block max-w-sm mx-auto sm:w-full p-6 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ${
-                index % 2 === 0 ? "bg-blue-100" : "bg-green-100"
+                index % 2 === 0 ? "bg-green-100" : "bg-orange-100"
               }`}
             >
               <h5 className="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Album No. {`${index + 1}`}
               </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="font-normal text-gray-700 dark:text-gray-400 text-center">
                 {item.title}
               </p>
             </Link>
