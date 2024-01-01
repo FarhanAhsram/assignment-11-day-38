@@ -37,6 +37,7 @@ export default function albumDetailsPage({ albumDetails }) {
                   src={item.thumbnailUrl}
                   width={150}
                   height={150}
+                  quality={100}
                   alt="Thumbnail Cover"
                   class="rounded-lg mx-auto my-2"
                 />
